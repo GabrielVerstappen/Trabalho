@@ -1,45 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>2025</title>
-    </head>
-    <body>
-        <table border="1" width="85%" align="center">
-            <tr bgcolor="#3e1b57">
-                <td align="center">
-                    <img src="info.jpg" width="95%" height="222px" alt="Imagem informativa">
-                </td>
-            </tr>
-        </table>
+<head>
+    <meta charset="UTF-8">
+    <title>2025</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f7fa;
+        }
 
-        <table border="1" width="85%" align="center">
-            <tr>
-                <th>Data atividade</th>
-                <th>Descrição</th>
-                <th>Link atividade</th>
-            </tr>
-             <tr>
-                <td>23/04</td>
-                <td>COLSPAN - HTML</td>
-                <td>
-                    <a href="colspam 23.04/sublime.html"><button>IR</button></a>
-                </td>
-            </tr>
-            <tr>
-                <td>24/04</td>
-                <td>ROWSPAN - HTML</td>
-                <td>
-                    <a href="rowspan/rowspan.html"><button>IR</button></a>
-                </td>
-            </tr>
-            <tr>
-                <td>25/04</td>
-                <td>REDES - CIÊNCIA</td>
-                <td>
-                    <a href="redes/redes.html"><button>IR</button></a>
-                </td>
-            </tr>
+        header {
+            background-color: #2c3e50;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        main {
+            width: 85%;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #dfe6ed;
+        }
+
+        th {
+            background-color: #2980b9;
+            color: white;
+            font-size: 18px;
+        }
+
+        tr:hover {
+            background-color: #ecf3f8;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #217dbb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="info.jpg" alt="Imagem informativa">
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data atividade</th>
+                    <th>Descrição</th>
+                    <th>Link atividade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>23/04</td>
+                    <td>COLSPAN - HTML</td>
+                    <td><a href="colspam 23.04/sublime.html"><button>IR</button></a></td>
+                </tr>
+                <tr>
+                    <td>24/04</td>
+                    <td>ROWSPAN - HTML</td>
+                    <td><a href="rowspan/rowspan.html"><button>IR</button></a></td>
+                </tr>
+                <tr>
+                    <td>25/04</td>
+                    <td>REDES - CIÊNCIA</td>
+                    <td><a href="redes/redes.html"><button>IR</button></a></td>
+                </tr>
+            </tbody>
         </table>
-    </body>
+    </main>
+</body>
 </html>
