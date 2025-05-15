@@ -1,207 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Atividades</title>
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
       font-family: Verdana, sans-serif;
-      background-color: #1C1C1C;
-      margin: 0;
-      padding: 0;
-      color: white;
-    }
-
-    .container {
-      width: 85%;
-      margin: auto;
+      background-color: #121212;
+      color: #f1f1f1;
+      padding: 20px;
     }
 
     .banner {
-      width: 100%;
-      margin: 20px auto;
-      border: 3px solid #2c3e50;
+      width: 80%;
+      margin: 20px auto 40px;
+      border-radius: 10px;
       overflow: hidden;
-      border-radius: 8px;
+      border: 2px solid #333;
+      box-shadow: 0 0 10px #000;
     }
 
     .banner img {
       width: 100%;
       height: 200px;
-      display: block;
       object-fit: cover;
+      display: block;
+    }
+
+    .topico {
+      width: 80%;
+      margin: 40px auto;
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #000;
+      overflow: hidden;
+      border: 1px solid #333;
+    }
+
+    .titulo-topico {
+      background-color: #1f1f1f;
+      color: #f1c40f;
+      font-size: 24px;
+      padding: 16px;
+      text-align: center;
+      font-weight: bold;
+      border-bottom: 1px solid #333;
     }
 
     table {
       width: 100%;
-      border: 3px solid #2c3e50;
       border-collapse: collapse;
-      margin-bottom: 30px;
-      background-color: #d6eaf8;
-      color: black;
     }
 
     th, td {
-      padding: 10px;
+      padding: 12px;
       text-align: center;
-      border: 1px solid #2c3e50;
+      border-bottom: 1px solid #2a2a2a;
     }
 
     th {
-      background-color: #aed6f1;
+      background-color: #222;
+      color: #f1c40f;
     }
 
-    .titulo {
-      background-color: #2c3e50;
-      color: white;
-      padding: 10px;
-      font-size: 22px;
+    td {
+      background-color: #1f1f1f;
     }
 
-    button {
-      background-color: #2c3e50;
-      color: white;
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    a button {
+      background-color: #f1c40f;
+      color: #121212;
       border: none;
       padding: 6px 12px;
+      border-radius: 6px;
       cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      text-align: center;
+      display: inline-block;
     }
 
-    button:hover {
-      background-color: #1a252f;
+    a button:hover {
+      background-color: #c89f0a;
     }
 
     .footer {
       text-align: center;
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      margin: 40px 0;
-      color: white;
+      font-size: 14px;
+      color: #777;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
 
-    <div class="banner">
-      <img src="depositphotos_613637942-stock-illustration-black-technology-banner-background.jpg" alt="Imagem informativa">
-    </div>
-
-    <table>
-      <tr>
-        <td colspan="3" class="titulo"><font face="verdana"><strong>Front-End 🎨</strong></font></td>
-      </tr>
-      <tr>
-        <th width="20%">Data Atividade</th>
-        <th width="60%">Atividade</th>
-        <th width="20%">Link</th>
-      </tr>
-      <tr>
-        <td><font face="verdana"><strong>23/04/2025</strong></font></td>
-        <td><font face="verdana"><strong>COLSPAN - HTML</strong></font></td>
-        <td><a href="colspam 23.04/sublime.html"><button><font face="verdana"><strong>IR</strong></font></button></a></td>
-      </tr>
-      <tr>
-        <td><font face="verdana"><strong>24/04/2025</strong></font></td>
-        <td><font face="verdana"><strong>ROWSPAN - HTML</strong></font></td>
-        <td><a href="rowspan/rowspan.html"><button><font face="verdana"><strong>IR</strong></font></button></a></td>
-      </tr>
-      <tr>
-        <td><font face="verdana"><strong>28/04/2025</strong></font></td>
-        <td><font face="verdana"><strong>TABELA COLSPAN & ROWSPAN - HTML</strong></font></td>
-        <td><a href="tabela colspan e rowspan/tabela colspan e rowspan.html"><button><font face="verdana"><strong>IR</strong></font></button></a></td>
-      </tr>
-      <tr>
-        <td><font face="verdana"><strong>06/05/2025</strong></font></td>
-        <td><font face="verdana"><strong>TABELA COLSPAN & ROWSPAN JUNTOS - HTML</strong></font></td>
-        <td><a href="rowspan e colspan 06.05/rowspan e colspan juntos.html"><button><font face="verdana"><strong>IR</strong></font></button></a></td>
-      </tr>
-      <tr>
-        <td><font face="verdana"><strong>12/05/2025</strong></font></td>
-        <td><font face="verdana"><strong>INÍCIO DO CSS - HTML</strong></font></td>
-        <td><a href="modelos.html"><button><font face="verdana"><strong>IR</strong></font></button></a></td>
-      </tr>
-    </table>
-
-    <table>
-      <tr>
-        <td colspan="3" class="titulo"><font face="verdana"><strong>Ciência da Computação 📟</strong></font></td>
-      </tr>
-      <tr>
-        <th width="20%">Data Atividade</th>
-        <th width="60%">Atividade</th>
-        <th width="20%">Link</th>
-      </tr>
-      <tr>
-        <td><font face="verdana"><strong>25/04/2025</strong></font></td>
-        <td><font face="verdana"><strong>REDES - CIÊNCIA</strong></font></td>
-        <td><a href="redes/redes.html"><button><font face="verdana"><strong>IR</strong></font></button></a></td>
-      </tr>
-      <tr>
-        <td><font face="verdana"><strong>--/--</strong></font></td>
-        <td><font face="verdana"><strong>Atividade a adicionar</strong></font></td>
-        <td><a href="#"><button><font face="verdana"><strong>IR</strong></font></button></a></td>
-      </tr>
-      <tr>
-        <td><font face="verdana"><strong>--/--</strong></font></td>
-        <td><font face="verdana"><strong>Atividade a adicionar</strong></font></td>
-        <td><a href="#"><button><font face="verdana"><strong>IR</strong></font></button></a></td>
-      </tr>
-      <tr>
-        <td><font face="verdana"><strong>--/--</strong></font></td>
-        <td><font face="verdana"><strong>Atividade a adicionar</strong></font></td>
-        <td><a href="#"><button><font face="verdana"><strong>IR</strong></font></button></a></td>
-      </tr>
-      <tr>
-        <td><font face="verdana"><strong>--/--</strong></font></td>
-        <td><font face="verdana"><strong>Atividade a adicionar</strong></font></td>
-        <td><a href="#"><button><font face="verdana"><strong>IR</strong></font></button></a></td>
-      </tr>
-    </table>
-
-    <table>
-      <tr>
-        <td colspan="3" class="titulo"><font face="verdana"><strong>Análise e Projeto de Sistemas 🏗️</strong></font></td>
-      </tr>
-      <tr>
-        <th width="20%">Data Atividade</th>
-        <th width="60%">Atividade</th>
-        <th width="20%">Link</th>
-      </tr>
-      <tr>
-        <td><font face="verdana"><strong>--/--</strong></font></td>
-        <td><font face="verdana"><strong>Atividade a adicionar</strong></font></td>
-        <td><a href="#"><button><font face="verdana"><strong>IR</strong></font></button></a></td>
-      </tr>
-      <tr>
-        <td><font face="verdana"><strong>--/--</strong></font></td>
-        <td><font face="verdana"><strong>Atividade a adicionar</strong></font></td>
-        <td><a href="#"><button><font face="verdana"><strong>IR</strong></font></button></a></td>
-      </tr>
-      <tr>
-        <td><font face="verdana"><strong>--/--</strong></font></td>
-        <td><font face="verdana"><strong>Atividade a adicionar</strong></font></td>
-        <td><a href="#"><button><font face="verdana"><strong>IR</strong></font></button></a></td>
-      </tr>
-      <tr>
-        <td><font face="verdana"><strong>--/--</strong></font></td>
-        <td><font face="verdana"><strong>Atividade a adicionar</strong></font></td>
-        <td><a href="#"><button><font face="verdana"><strong>IR</strong></font></button></a></td>
-      </tr>
-      <tr>
-        <td><font face="verdana"><strong>--/--</strong></font></td>
-        <td><font face="verdana"><strong>Atividade a adicionar</strong></font></td>
-        <td><a href="#"><button><font face="verdana"><strong>IR</strong></font></button></a></td>
-      </tr>
-    </table>
-
-    <div class="footer">
-      <font face="verdana"><strong>Gabriel Gustavo Casarin Bieger N° 8 - 2° A TDS</strong></font>
-    </div>
-
+  <div class="banner">
+    <img src="GABRIEL GUSTAVO.png" alt="Banner" />
   </div>
+
+  <div class="topico">
+    <div class="titulo-topico">🎨 Front-End</div>
+    <table>
+      <tr>
+        <th style="width: 15%;">Data</th>
+        <th style="width: 69%;">Atividade</th>
+        <th style="width: 20%;">Link</th>
+      </tr>
+      <tr><td>23/04/2025</td><td>COLSPAN - HTML</td><td><a href="colspam 23.04/sublime.html"><button>IR</button></a></td></tr>
+      <tr><td>24/04/2025</td><td>ROWSPAN - HTML</td><td><a href="rowspan/rowspan.html"><button>IR</button></a></td></tr>
+      <tr><td>28/04/2025</td><td>TABELA COLSPAN & ROWSPAN - HTML</td><td><a href="tabela colspan e rowspan/tabela colspan e rowspan.html"><button>IR</button></a></td></tr>
+      <tr><td>06/05/2025</td><td>TABELA COLSPAN & ROWSPAN JUNTOS - HTML</td><td><a href="rowspan e colspan 06.05/rowspan e colspan juntos.html"><button>IR</button></a></td></tr>
+      <tr><td>12/05/2025</td><td>INÍCIO DO CSS - HTML</td><td><a href="modelos.html"><button>IR</button></a></td></tr>
+    </table>
+  </div>
+
+  <div class="topico">
+    <div class="titulo-topico">📟 Ciência da Computação</div>
+    <table>
+      <tr>
+        <th style="width: 15%;">Data</th>
+        <th style="width: 69%;">Atividade</th>
+        <th style="width: 20%;">Link</th>
+      </tr>
+      <tr><td>25/04/2025</td><td>REDES - CIÊNCIA</td><td><a href="redes/redes.html"><button>IR</button></a></td></tr>
+      <tr><td>--/--</td><td>Atividade a adicionar</td><td><a href="#"><button>IR</button></a></td></tr>
+      <tr><td>--/--</td><td>Atividade a adicionar</td><td><a href="#"><button>IR</button></a></td></tr>
+      <tr><td>--/--</td><td>Atividade a adicionar</td><td><a href="#"><button>IR</button></a></td></tr>
+      <tr><td>--/--</td><td>Atividade a adicionar</td><td><a href="#"><button>IR</button></a></td></tr>
+      
+    </table>
+  </div>
+
+  <div class="topico">
+    <div class="titulo-topico">🏗️ Análise e Projeto de Sistemas</div>
+    <table>
+      <tr>
+        <th style="width: 15%;">Data</th>
+        <th style="width: 69%;">Atividade</th>
+        <th style="width: 20%;">Link</th>
+      </tr>
+      <tr><td>--/--</td><td>Atividade a adicionar</td><td><a href="#"><button>IR</button></a></td></tr>
+      <tr><td>--/--</td><td>Atividade a adicionar</td><td><a href="#"><button>IR</button></a></td></tr>
+      <tr><td>--/--</td><td>Atividade a adicionar</td><td><a href="#"><button>IR</button></a></td></tr>
+      <tr><td>--/--</td><td>Atividade a adicionar</td><td><a href="#"><button>IR</button></a></td></tr>
+      <tr><td>--/--</td><td>Atividade a adicionar</td><td><a href="#"><button>IR</button></a></td></tr>
+      
+    </table>
+  </div>
+
+  <div class="footer">
+    <h3>Gabriel Gustavo Casarin Bieger N° 8 - 2° A TDS</h3>
+  </div>
+
 </body>
 </html>
