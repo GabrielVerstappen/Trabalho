@@ -1,62 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Exemplo de ROWSPAN</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exemplo de ROWSPAN</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+      padding: 20px;
+    }
+
+    .topico {
+      width: 80%;
+      margin: 40px auto;
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #000;
+      overflow: hidden;
+      border: 1px solid #333;
+      padding: 20px;
+    }
+
+    .titulo-topico {
+      background-color: #1f1f1f;
+      color: #f1c40f;
+      font-size: 24px;
+      padding: 16px;
+      text-align: center;
+      font-weight: bold;
+      border-bottom: 1px solid #333;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #2a2a2a;
+    }
+
+    th {
+      background-color: #222;
+      color: #f1c40f;
+    }
+
+    td {
+      background-color: #1f1f1f;
+    }
+
+    a button {
+      background-color: #f1c40f;
+      color: #121212;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 30px;
+    }
+
+    a button:hover {
+      background-color: #c89f0a;
+    }
+
+    .center {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <table border="1" width="80%" align="center" style="border-color: black;" cellpadding="2" cellspacing="0">
-        <tr>
-            <td>
-                <center><h1><font face="verdana">ROWSPAN</font></h1></center>
-                <p>
-                    <font face="verdana">
-                    Define quantas linhas uma mesma célula pode abranger. 
-                    Por padrão, na maioria dos navegadores de internet 
-                    cada célula adicionada em uma tabela corresponde a 
-                    uma linha. Pode ser aplicado no td.
-                </font>
-                </p>
-            </td>
-        </tr>
+
+  <div class="topico">
+    <div class="titulo-topico">🔢 Atributo ROWSPAN no HTML</div>
+
+    <p class="center">
+      Define quantas linhas uma mesma célula pode abranger. Por padrão, na maioria dos navegadores, cada célula adicionada em uma tabela corresponde a uma linha. Pode ser aplicado no <code>&lt;td&gt;</code>.
+    </p>
+
+    <table>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td rowspan="2">1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
     </table>
 
-    <table width="80%" align="center" border="1" style="border-color: black;" cellpadding="2" cellspacing="0">
-        <tr>
-            <td width="20%">1</td>
-            <td width="20%">2</td>
-            <td width="20%">3</td>
-            <td width="20%">4</td>
-            <td width="20%">5</td>
-        </tr>
-        <tr>
-            <td width="20%" rowspan="2">1</td>
-            <td width="20%">2</td>
-            <td width="20%">3</td>
-            <td width="20%">4</td>
-            <td width="20%">5</td>
-        </tr>
-        <tr>
-            <td width="20%">2</td>
-            <td width="20%">3</td>
-            <td width="20%">4</td>
-            <td width="20%">5</td>
-        </tr>
-        <tr>
-            <td width="20%">1</td>
-            <td width="20%">2</td>
-            <td width="20%">3</td>
-            <td width="20%">4</td>
-            <td width="20%">5</td>
-        </tr>
-    </table>
-    <br><br><br>
-    <center>
-    <a href="../index.html">
-            <button style=" width: 140px; height: 60px; background-color: #D3D3D3;">Clique aqui para voltar
-        </button>
-    </a>
-    </center>
+    <div class="center">
+      <a href="../index.html">
+        <button>Clique aqui para voltar</button>
+      </a>
+    </div>
+  </div>
+
 </body>
 </html>
