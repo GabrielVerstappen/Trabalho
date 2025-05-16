@@ -1,79 +1,153 @@
-	<!DOCTYPE html>
-	<html>
-		<head>
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<title>rowspan e colspan juntos</title>
-		</head>
-			<body>
-				<h1><font face="verdana"><center>Utilização de Rowspan com Colspan</center></font></h1>
-				<table border="1" align="center" width="80%" style="border-color: black;" cellpadding="2" cellspacing="0">
-					<tr>
-						<td  align="center" colspan="5"><font face="verdana">1, 2, 3, 4, 5</font></td>
-					</tr>
-					<tr>
-						<td align="center"><font face="verdana">1</font></td>
-						<td align="center"><font face="verdana">2</font></td>
-						<td align="center"><font face="verdana">3</font></td>
-						<td align="center"><font face="verdana">4</font></td>
-						<td align="center"><font face="verdana">5</font></td>
-					</tr>
-					<tr>
-					<td align="center" rowspan="3"><font face="verdana">1</font></td>
-					<td align="center"><font face="verdana">2</font></td>
-					<td align="center"><font face="verdana">3</font></td>
-					<td align="center"><font face="verdana">4</font></td>
-					<td align="center"><font face="verdana">5</font></td>
-				</tr>
-					<tr>
-					<td align="center"><font face="verdana">2</font></td>
-					<td align="center"><font face="verdana">3</font></td>
-					<td align="center"><font face="verdana">4</font></td>
-					<td align="center"><font face="verdana">5</font></td>
-				</tr>
-					<tr>
-					<td align="center"><font face="verdana">2</font></td>
-					<td align="center"><font face="verdana">3</font></td>
-					<td align="center"><font face="verdana">4</font></td>
-					<td align="center"><font face="verdana">5</font></td>
-				</tr>
-			</table>
-			<br><br>
-			<table width="80%" align="center" border="1" style="border-color: black;" cellpadding="2" cellspacing="0">
-				<tr>
-					<td align="center"><font face="verdana">1</font></td>
-					<td colspan="2" align="center"><font face="verdana">2,3</font></td>
-					<td colspan="2" align="center"><font face="verdana">4,5</font></td>
-				</tr>
-					<tr>
-					<td rowspan="2" align="center" valign="top"><font face="verdana">1</font></td>
-					<td align="center"><font face="verdana">2</font></td>
-					<td align="center"><font face="verdana">3</font></td>
-					<td rowspan="2" align="center" valign="bottom"><font face="verdana">4</font></td>
-					<td align="center"><font face="verdana">5</font></td>
-				</tr>
-					<tr>
-					<td align="center"><font face="verdana">2</font></td>
-					<td rowspan="2" align="left" valign="top"><font face="verdana">3</font></td>
-					<td align="center"><font face="verdana">5</font></td>
-				</tr>
-					<tr>
-					<td align="center"><font face="verdana">1</font></td>
-					<td align="center"><font face="verdana">2</font></td>
-					<td align="center"><font face="verdana">4</font></td>
-					<td rowspan="2" align="right" valign="bottom"><font face="verdana">5</font></td>
-				</tr>
-					<tr>
-					<td colspan="2" align="center"><font face="verdana">1,2</font></td>
-					<td colspan="2" align="center"><font face="verdana">3,5</font></td>
-				</tr>
-			</table>
-				    <br><br><br>
-    <center>
-    <a href="../index.html">
-            <button style=" width: 140px; height: 60px; background-color: #D3D3D3;">Clique aqui para voltar
-        </button>
-    </a>
-    </center>
-			</body>
-	</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rowspan e Colspan Juntos</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+      padding: 20px;
+    }
+
+    .topico {
+      width: 80%;
+      margin: 40px auto;
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #000;
+      border: 1px solid #333;
+      padding: 20px;
+    }
+
+    .titulo-topico {
+      background-color: #1f1f1f;
+      color: #f1c40f;
+      font-size: 24px;
+      padding: 16px;
+      text-align: center;
+      font-weight: bold;
+      border-bottom: 1px solid #333;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    td {
+      border: 1px solid #2a2a2a;
+      padding: 12px;
+      background-color: #1f1f1f;
+      text-align: center;
+      color: #f1f1f1;
+    }
+
+    a button {
+      background-color: #f1c40f;
+      color: #121212;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 30px;
+    }
+
+    a button:hover {
+      background-color: #c89f0a;
+    }
+
+    .center {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topico">
+    <div class="titulo-topico">🔀 Utilização de Rowspan com Colspan</div>
+
+    <table>
+      <tr>
+        <td colspan="5">1, 2, 3, 4, 5</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td rowspan="3">1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <td>1</td>
+        <td colspan="2">2, 3</td>
+        <td colspan="2">4, 5</td>
+      </tr>
+      <tr>
+        <td rowspan="2" valign="top">1</td>
+        <td>2</td>
+        <td>3</td>
+        <td rowspan="2" valign="bottom">4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td rowspan="2" align="left" valign="top">3</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>4</td>
+        <td rowspan="2" align="right" valign="bottom">5</td>
+      </tr>
+      <tr>
+        <td colspan="2">1, 2</td>
+        <td colspan="2">3, 5</td>
+      </tr>
+    </table>
+
+    <div class="center">
+      <a href="../index.html">
+        <button>Clique aqui para voltar</button>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
