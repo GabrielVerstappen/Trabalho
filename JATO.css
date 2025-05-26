@@ -1,0 +1,93 @@
+body {
+      font-family: Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #002776;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    header img {
+      width: 80px;
+      vertical-align: middle;
+      margin-left: 15px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #002776;
+      font-size: 1.8em;
+      border-bottom: 3px solid #000080;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      color: #003399;
+      margin-top: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #002776;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+            .botao-container {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .botao-tematico {
+          display: inline-block;
+          background-color: #002776; /* Azul PRF e Aeronáutica */
+          color: #FFCC00;            /* Amarelo dourado da PRF */
+          padding: 15px 35px;
+          border-radius: 30px;
+          font-size: 18px;
+          font-weight: bold;
+          text-decoration: none;
+          border: 3px solid #FFCC00;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+          transition: all 0.3s ease-in-out;
+        }
+
+        .botao-tematico:hover {
+          background-color: #FFCC00;
+          color: #002776;
+          border: 3px solid #002776;
+          transform: scale(1.08);
+        }

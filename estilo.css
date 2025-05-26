@@ -1,32 +1,82 @@
-table tr td{
-	border: 1px solid black; /* borda da tabela */
-}
+/* Estilização geral da página */
+        body {
+            font-family: Verdana, sans-serif; /* Define a fonte do site */
+            background-color: #f4f4f4; /* Cor de fundo da página */
+            margin: 0; /* Remove margens externas padrão */
+            padding: 20px; /* Adiciona espaçamento */
+            text-align: center; /* Centraliza o texto por padrão */
+        }
 
-table{
-	width: 80%; /* largura da tabela */
-	margin: auto; /* alinhamento centralizado da tabela */
-}
+        /* Estilos das tabelas */
+        table {
+            width: 95%; /* Define a largura da tabela */
+            border-collapse: collapse; /* Remove espaços entre as bordas */
+            margin: 20px auto; /* Centraliza e adiciona espaço */
+            background: white; /* Define cor de fundo */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+            border-radius: 10px; /* Arredonda os cantos */
+            overflow: hidden; /* Impede que conteúdo ultrapasse os limites */
+        }
 
-button{
-	color: 	#00FFFF	; /* cor do texto do botão */
-	background-color: #4682B4;
-	font-size: 15px; /* tamanho da fonte do botão */
-	border-radius: 50px 50px 50px 50px; /* arredonda os cantos - no sentido horário*/
-	margin-top: 20px; /* espaço do topo da tabela até o botão */
-	margin-bottom: 20px; /* espaço do fim da tabela até o botão */
-	margin-left: 20px; /* margem a esquerda, os números não são somandos, o maior vai predominar */
-	margin-right: 20px; /* margem a direira */
+        /* Estilos das células da tabela */
+        td {
+            width: 50%; /* Define largura igual para cada célula */
+            padding: 20px; /* Adiciona espaço interno */
+            text-align: center; /* Centraliza o conteúdo */
+            vertical-align: middle; /* Garante que o conteúdo fique centralizado verticalmente */
+        }
 
-	/* margin: 50px 20px 20px 20px; "Primeiro valor Topo - Segundo valor Direito - Terceiro valor baixo - Quarto valor esquerdo" */
+        /* Estilização do bloco de título */
+        .titulo-secao {
+            font-size: 40px; /* Define tamanho do texto */
+            font-weight: bold; /* Define texto em negrito */
+            display: flex; /* Usa flexbox para alinhar elementos horizontalmente */
+            align-items: center; /* Alinha verticalmente os itens */
+            justify-content: center; /* Centraliza os itens horizontalmente */
+        }
 
-	padding-top: 5px; /* margem interna topo do botão*/
-	padding-bottom:5px; /* margem interna inferior do botão */
-	padding-left: 8px; /* margem interna esquerda do botão */
-	padding-right: 8px /* margem interna direita do botão */
-}
+        /* Estilos para as imagens do título */
+        .titulo-secao img {
+            width: 80px; /* Define largura da imagem */
+            margin-left: 15px; /* Espaçamento entre texto e imagem */
+        }
 
-h1{
-	color: #A020F0; /* cor do texto */
-	font-size: 50px; /* tamanho do texto */
-	font-family: 'magneto'; /* fonte do texto */
-}
+        /* Estilos para imagens principais */
+        .galeria-imagens img {
+            width: 100%; /* As imagens ocupam toda a largura da célula */
+            height: 450px; /* Define altura fixa */
+            object-fit: cover; /* Mantém proporção sem distorcer */
+            border-radius: 10px; /* Adiciona bordas arredondadas */
+            transition: transform 0.3s; /* Efeito suave ao passar o mouse */
+        }
+
+        /* Efeito ao passar o mouse nas imagens */
+        .galeria-imagens img:hover {
+            transform: scale(1.05); /* Aumenta ligeiramente a imagem ao passar o mouse */
+        }
+
+        .botao-container {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .botao-tematico {
+          display: inline-block;
+          background-color: #002776; /* Azul PRF e Aeronáutica */
+          color: #FFCC00;            /* Amarelo dourado da PRF */
+          padding: 15px 35px;
+          border-radius: 30px;
+          font-size: 18px;
+          font-weight: bold;
+          text-decoration: none;
+          border: 3px solid #FFCC00;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+          transition: all 0.3s ease-in-out;
+        }
+
+        .botao-tematico:hover {
+          background-color: #FFCC00;
+          color: #002776;
+          border: 3px solid #002776;
+          transform: scale(1.08);
+        }

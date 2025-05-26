@@ -1,0 +1,93 @@
+body {
+            font-family: Verdana, sans-serif; /* Fonte principal */
+            background-color: #f4f4f4; /* Cor de fundo cinza-claro */
+            margin: 0; /* Remove margem padrão */
+            padding: 0; /* Remove espaçamento interno padrão */
+            color: #333; /* Cor do texto padrão */
+        }
+
+        header {
+            background-color: #002776; /* Cor de fundo azul-escuro */
+            color: white; /* Texto branco */
+            padding: 30px 20px; /* Espaçamento interno: 30 cima/baixo, 20 lados */
+            text-align: center; /* Centraliza o conteúdo */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */ 
+        }
+
+        header img {
+            width: 80px; /* Largura da imagem */
+            vertical-align: middle; /* Alinhamento vertical com o texto */
+            margin-left: 15px; /* Espaço à esquerda da imagem */
+        }
+
+        header h1 {
+            font-size: 2.5em; /* Tamanho grande da fonte */
+            margin: 0; /* Remove margens padrão */
+        }
+
+        main {
+            max-width: 960px; /* Largura máxima da área de conteúdo */
+            margin: 40px auto; /* Centraliza horizontalmente */
+            padding: 20px; /* Espaço interno */
+            background-color: white; /* Fundo branco */
+            border-radius: 10px; /* Cantos arredondados */
+            box-shadow: 0 4px 80px rgba(0, 0, 0, 0.1); /* Leve sombra */
+        }
+
+        section {
+            margin-bottom: 40px; /* Espaço abaixo de cada seção */
+        }
+
+        h2 {
+            color: #002776; /* Azul escuro */
+            font-size: 1.8em; /* Tamanho da fonte */
+            border-bottom: 2px solid #ddd; /* Linha inferior */
+            padding-bottom: 5px; /* Espaço abaixo do texto */
+        }
+
+        h3 {
+            color: #003399; /* Azul médio */
+            margin-top: 20px; /* Espaço acima */
+        }
+
+        ul {
+            padding-left: 20px; /* Recuo da lista */
+        }
+
+        ul li {
+            margin-bottom: 10px; /* Espaço entre itens */
+        }
+
+        footer {
+            background-color: #002776; /* Azul escuro */
+            color: white; /* Texto branco */
+            text-align: center; /* Centralizado */
+            padding: 15px 0; /* Espaço interno vertical */
+            margin-top: 40px; /* Espaço acima do rodapé */
+        }
+
+                .botao-container {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .botao-tematico {
+          display: inline-block;
+          background-color: #002776; /* Azul PRF e Aeronáutica */
+          color: #FFCC00;            /* Amarelo dourado da PRF */
+          padding: 15px 35px;
+          border-radius: 30px;
+          font-size: 18px;
+          font-weight: bold;
+          text-decoration: none;
+          border: 3px solid #FFCC00;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+          transition: all 0.3s ease-in-out;
+        }
+
+        .botao-tematico:hover {
+          background-color: #FFCC00;
+          color: #002776;
+          border: 3px solid #002776;
+          transform: scale(1.08);
+        }
