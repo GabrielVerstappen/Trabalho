@@ -1,34 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="PRF.css">
     <title>Polícia Rodoviária Federal (PRF)</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #002776;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header img {
+            width: 80px;
+            vertical-align: middle;
+            margin-left: 15px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 80px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #002776;
+            font-size: 1.8em;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #003399;
+            margin-top: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #002776;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        .botao-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .botao-tematico {
+          display: inline-block;
+          background-color: #002776;
+          color: #FFCC00;
+          padding: 15px 35px;
+          border-radius: 30px;
+          font-size: 18px;
+          font-weight: bold;
+          text-decoration: none;
+          border: 3px solid #FFCC00;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+          transition: all 0.3s ease-in-out;
+          margin: 5px;
+          cursor: pointer;
+        }
+
+        .botao-tematico:hover {
+          background-color: #FFCC00;
+          color: #002776;
+          border: 3px solid #002776;
+          transform: scale(1.08);
+        }
+    </style>
 </head>
 <body>
+
   <header>
     <h1>Polícia Rodoviária Federal (PRF) <img src="prfpng.png" alt="Logo PRF"></h1>
     <p>Segurança, fiscalização e proteção nas rodovias federais do Brasil</p>
   </header>
 
+  <!-- Botão do Leitor de Tela -->
+  <div class="botao-container">
+      <button onclick="lerPagina()" class="botao-tematico">🔊 Ouvir Informações da PRF</button>
+  </div>
+
   <main>
     <section>
       <h2>📌 O que é a PRF?</h2>
-      <p>A Polícia Rodoviária Federal (PRF) é uma instituição policial...</p>
+      <p>A Polícia Rodoviária Federal (PRF) é uma instituição policial que atua na segurança e fiscalização das rodovias federais do Brasil.</p>
     </section>
 
     <section>
       <h2>📚 História da PRF</h2>
-      <p>Fundada em 1928 com o nome de "Polícia das Estradas"... </p>
+      <p>Fundada em 1928 com o nome de "Polícia das Estradas", a PRF evoluiu ao longo dos anos para se tornar uma das principais forças de segurança viária do país.</p>
     </section>
 
     <section>
       <h2>🎯 Missão, Visão e Valores</h2>
       <ul>
-        <li><strong>Missão:</strong> Promover a segurança pública...</li>
-        <li><strong>Visão:</strong> Ser referência mundial...</li>
-        <li><strong>Valores:</strong> Ética, disciplina, respeito à vida...</li>
+        <li><strong>Missão:</strong> Promover a segurança pública com cidadania.</li>
+        <li><strong>Visão:</strong> Ser referência mundial em polícia de trânsito e segurança viária.</li>
+        <li><strong>Valores:</strong> Ética, disciplina, respeito à vida e compromisso com a sociedade.</li>
       </ul>
     </section>
 
@@ -37,13 +139,13 @@
       <ul>
         <li>Fiscalizar rodovias federais.</li>
         <li>Combater crimes como tráfico e contrabando.</li>
-        <li>Atender acidentes.</li>
+        <li>Atender acidentes de trânsito.</li>
       </ul>
     </section>
 
     <section>
       <h2>🧑‍✈️ Perfil do Policial Rodoviário Federal</h2>
-      <p>O policial da PRF deve ser preparado física e mentalmente...</p>
+      <p>O policial da PRF deve ser preparado física e mentalmente para situações adversas, com foco na segurança e no cumprimento das leis.</p>
       <h3>Requisitos comuns:</h3>
       <ul>
         <li>Tomada de decisões rápidas.</li>
@@ -53,7 +155,7 @@
 
     <section>
       <h2>📋 Concurso para a PRF</h2>
-      <p>O ingresso na PRF ocorre por meio de concurso público...</p>
+      <p>O ingresso na PRF ocorre por meio de concurso público, com provas de conhecimentos e testes físicos.</p>
       <h3>Conteúdos exigidos nas provas:</h3>
       <ul>
         <li>Língua Portuguesa</li>
@@ -63,14 +165,38 @@
 
     <section>
       <h2>🚨 Importância da PRF para o Brasil</h2>
-      <p>A PRF tem papel essencial na segurança viária e no combate ao crime...</p>
+      <p>A PRF tem papel essencial na segurança viária e no combate ao crime nas rodovias federais, protegendo a vida e o patrimônio dos cidadãos.</p>
     </section>
   </main>
+
   <div class="botao-container">
-  <a href="plano A e B.html" class="botao-tematico">⬅ Voltar à Página Principal</a>
-</div>
+    <a href="plano A e B.html" class="botao-tematico">⬅ Voltar à Página Principal</a>
+  </div>
+
   <footer>
     <p>2025 Polícia Rodoviária Federal. Todos os direitos reservados.</p>
   </footer>
+
+  <!-- Leitor de Tela Script -->
+  <script>
+    function lerPagina() {
+        let texto = `
+        Polícia Rodoviária Federal. Segurança, fiscalização e proteção nas rodovias federais do Brasil.
+        O que é a PRF? A PRF é uma instituição policial que atua nas rodovias federais do país.
+        História da PRF: Foi fundada em 1928 como Polícia das Estradas.
+        Missão, visão e valores: Promover segurança pública, ser referência mundial, e atuar com ética e disciplina.
+        Atribuições da PRF: Fiscalizar as rodovias federais, combater crimes e atender acidentes.
+        Perfil do policial da PRF: Deve ser preparado fisicamente e mentalmente, com conhecimento em leis de trânsito.
+        Concurso da PRF: O ingresso é feito por concurso público, com provas e testes físicos.
+        Importância da PRF: Proteger a vida e combater crimes nas estradas do Brasil.
+        `;
+        let sintese = new SpeechSynthesisUtterance(texto);
+        sintese.lang = 'pt-BR';
+        sintese.rate = 1; // Velocidade da fala
+        window.speechSynthesis.cancel(); // Cancela leituras anteriores se houver
+        window.speechSynthesis.speak(sintese);
+    }
+  </script>
+
 </body>
 </html>
