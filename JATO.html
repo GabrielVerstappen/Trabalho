@@ -3,29 +3,126 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="JATO.css">
   <title>Força Aérea Brasileira (FAB)</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #002776;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    header img {
+      width: 80px;
+      vertical-align: middle;
+      margin-left: 15px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #002776;
+      font-size: 1.8em;
+      border-bottom: 3px solid #000080;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      color: #003399;
+      margin-top: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #002776;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    .botao-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .botao-tematico {
+      display: inline-block;
+      background-color: #002776;
+      color: #FFCC00;
+      padding: 15px 35px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      border: 3px solid #FFCC00;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease-in-out;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .botao-tematico:hover {
+      background-color: #FFCC00;
+      color: #002776;
+      border: 3px solid #002776;
+      transform: scale(1.08);
+    }
+  </style>
 </head>
 <body>
 
   <header>
-    <h1>Força Aérea Brasileira (FAB) <img src="aero.png" alt="Logo FAB"></h1>
+    <h1>Força Aérea Brasileira (FAB) <img src="aero.png" alt="Logo da Força Aérea Brasileira"></h1>
     <p>Defendendo o espaço aéreo e promovendo a soberania nacional</p>
   </header>
+
+  <!-- Botão do Leitor de Tela -->
+  <div class="botao-container">
+    <button onclick="lerPagina()" class="botao-tematico">🔊 Ouvir Informações da FAB</button>
+  </div>
 
   <main>
     <section>
       <h2>✈️ O que é a FAB?</h2>
-      <p>
-        A Força Aérea Brasileira (FAB) é a mais alta instituição de aviação militar do Brasil, responsável por garantir a soberania do espaço aéreo nacional. Integra as Forças Armadas do Brasil, juntamente com o Exército e a Marinha.
-      </p>
+      <p>A Força Aérea Brasileira é a mais alta instituição de aviação militar do Brasil, responsável por garantir a soberania do espaço aéreo nacional. Integra as Forças Armadas do Brasil, juntamente com o Exército e a Marinha.</p>
     </section>
 
     <section>
       <h2>📚 História da Aeronáutica</h2>
-      <p>
-        Criada oficialmente em 1941, a FAB surgiu da fusão da aviação do Exército e da Marinha. Desde então, tornou-se protagonista em diversas missões nacionais e internacionais, inclusive participando da Segunda Guerra Mundial, no famoso Esquadrão "Senta a Pua!".
-      </p>
+      <p>Criada oficialmente em 1941, a FAB surgiu da fusão da aviação do Exército e da Marinha. Participou da Segunda Guerra Mundial no famoso Esquadrão Senta a Pua.</p>
     </section>
 
     <section>
@@ -51,16 +148,12 @@
 
     <section>
       <h2>🚀 Equipamentos e Tecnologia</h2>
-      <p>
-        A FAB conta com uma frota diversificada e moderna, incluindo caças Gripen NG, aeronaves de transporte como o KC-390, aviões de patrulha marítima, helicópteros de combate e vigilância, além de satélites e sistemas de defesa aérea de última geração.
-      </p>
+      <p>A FAB possui caças Gripen NG, aviões de transporte como o KC-390, helicópteros de combate e sistemas de defesa aérea de última geração.</p>
     </section>
 
     <section>
       <h2>👨‍✈️ Formação e Carreira Militar</h2>
-      <p>
-        Os militares da FAB passam por rigorosos treinamentos físicos, técnicos e estratégicos. A formação pode ocorrer por meio da EPCAR (Escola Preparatória), da AFA (Academia da Força Aérea) ou por concursos para sargentos e oficiais especialistas.
-      </p>
+      <p>Os militares da FAB passam por treinamentos físicos, técnicos e estratégicos, com formação pela EPCAR, AFA ou concursos para sargentos e oficiais.</p>
       <h3>Etapas comuns do processo seletivo:</h3>
       <ul>
         <li>Provas escritas</li>
@@ -73,17 +166,38 @@
 
     <section>
       <h2>🌎 A Importância da FAB para o Brasil</h2>
-      <p>
-        A FAB é fundamental para a soberania, segurança nacional e desenvolvimento do Brasil. Atua em emergências, catástrofes, missões internacionais e no controle de milhões de voos comerciais e militares que cruzam o espaço aéreo do país todos os anos.
-      </p>
+      <p>A FAB é essencial para a soberania e segurança nacional, atuando em emergências, resgates e no controle do espaço aéreo brasileiro.</p>
     </section>
   </main>
+
   <div class="botao-container">
-  <a href="plano A e B.html" class="botao-tematico">⬅ Voltar à Página Principal</a>
-</div>
+    <a href="plano A e B.html" class="botao-tematico">⬅ Voltar à Página Principal</a>
+  </div>
+
   <footer>
     <p>2025 Força Aérea Brasileira. Todos os direitos reservados.</p>
   </footer>
+
+  <!-- Leitor de Tela Script -->
+  <script>
+    function lerPagina() {
+        let texto = `
+        Força Aérea Brasileira. Defendendo o espaço aéreo e promovendo a soberania nacional.
+        O que é a FAB? A Força Aérea Brasileira é a principal instituição de aviação militar do Brasil.
+        História da Aeronáutica: Criada em 1941, participou da Segunda Guerra Mundial com o Esquadrão Senta a Pua.
+        Missão, visão e valores: Defender o espaço aéreo, ser moderna e eficaz, com patriotismo e integridade.
+        Principais atribuições: Defesa aérea, controle do tráfego, resgate, transporte de autoridades e missões internacionais.
+        Equipamentos e tecnologia: Caças Gripen, aviões KC-390, helicópteros e sistemas de defesa avançados.
+        Formação e carreira: Preparação física e técnica, através de escolas e concursos públicos.
+        Importância da FAB: Protege o Brasil e realiza missões de paz e resgate.
+        `;
+        let sintese = new SpeechSynthesisUtterance(texto);
+        sintese.lang = 'pt-BR';
+        sintese.rate = 1;
+        window.speechSynthesis.cancel(); // Cancela leituras anteriores
+        window.speechSynthesis.speak(sintese);
+    }
+  </script>
 
 </body>
 </html>
