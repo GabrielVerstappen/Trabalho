@@ -3,21 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="estilo.css">
-    <title>PRF & Aeronáutica</title>
+    <title>PRF & Aeronáutica - Acessível</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+
+        table {
+            width: 95%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        td {
+            width: 50%;
+            padding: 20px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .titulo-secao {
+            font-size: 40px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .titulo-secao img {
+            width: 80px;
+            margin-left: 15px;
+        }
+
+        .galeria-imagens img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .galeria-imagens img:hover {
+            transform: scale(1.05);
+        }
+
+        .botao-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .botao-tematico {
+            display: inline-block;
+            background-color: #002776;
+            color: #FFCC00;
+            padding: 15px 35px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border: 3px solid #FFCC00;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+            transition: all 0.3s ease-in-out;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .botao-tematico:hover {
+            background-color: #FFCC00;
+            color: #002776;
+            border: 3px solid #002776;
+            transform: scale(1.08);
+        }
+    </style>
 </head>
 <body>
+
+    <h1>PRF & Aeronáutica</h1>
+
+    <!-- Botão Leitor de Tela -->
+    <div class="botao-container">
+        <button onclick="lerPagina()" class="botao-tematico">🔊 Ouvir Página</button>
+    </div>
 
     <table border="1">
         <tr>
             <td>
                 <div class="titulo-secao">
-                    PRF <img src="prfpng.png" alt="PRF">
+                    PRF <img src="prfpng.png" alt="Logo da Polícia Rodoviária Federal">
                 </div>
             </td>
             <td>
                 <div class="titulo-secao">
-                    AERONÁUTICA <img src="aero.png" alt="Aeronáutica">
+                    AERONÁUTICA <img src="aero.png" alt="Logo da Força Aérea Brasileira">
                 </div>
             </td>
         </tr>
@@ -27,15 +114,40 @@
         <tr>
             <td>
                 <a href="PRF.html">
-                <img src="prf6.jpg" alt="PRF"></td>
-            </a>
+                    <img src="prf6.jpg" alt="Viatura da PRF em operação">
+                </a>
+            </td>
             <td>
                 <a href="JATO.html">
-                <img src="jato2.webp" alt="Jato"></td>
+                    <img src="jato2.webp" alt="Avião da aeronáutica voando no céu">
+                </a>
+            </td>
         </tr>
     </table>
+
     <div class="botao-container">
-  <a href="index.html" class="botao-tematico">⬅ Voltar à Página Principal</a>
-</div>
+        <a href="index.html" class="botao-tematico">⬅ Voltar à Página Principal</a>
+    </div>
+
+    <!-- Script do Leitor de Tela -->
+    <script>
+        function lerPagina() {
+            let texto = `
+            Bem-vindo ao site da PRF e da Aeronáutica.
+            No topo da página, há dois logotipos: da Polícia Rodoviária Federal e da Força Aérea Brasileira.
+            Logo abaixo, existem duas imagens clicáveis.
+            A primeira é da viatura da PRF. Clique nela para saber mais sobre a PRF.
+            A segunda imagem é de um avião da aeronáutica no céu. Clique nela para saber mais sobre a Aeronáutica.
+            Para voltar à página principal, clique no botão de voltar no final da página.
+            `;
+
+            let sintese = new SpeechSynthesisUtterance(texto);
+            sintese.lang = 'pt-BR'; // Leitura em português
+            sintese.rate = 1; // Velocidade normal
+            window.speechSynthesis.cancel(); // Cancela leituras anteriores, se houver
+            window.speechSynthesis.speak(sintese);
+        }
+    </script>
+
 </body>
 </html>
